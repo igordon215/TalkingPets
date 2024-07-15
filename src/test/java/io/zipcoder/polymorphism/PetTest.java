@@ -8,7 +8,7 @@ import static org.junit.Assert.*;
 public class PetTest {
 
     @Test
-    public void getName(){
+    public void testPetGetName(){
 
         String expectedPetName = "Smith";
         Pet pet = new Pet(expectedPetName);
@@ -19,7 +19,7 @@ public class PetTest {
     }
 
     @Test
-    public void setName(){
+    public void testPetSetName(){
 
         Pet pet = new Pet("Ollie");
         String newName = "Ollie";
@@ -30,7 +30,7 @@ public class PetTest {
     }
 
     @Test
-    public void speak(){
+    public void testPetSpeak(){
 
         Pet pet  = new Pet("Bruce McBarker");
 
