@@ -10,33 +10,34 @@ public class DogTest {
     @Test
     public void testDogGetName(){
 
-        String expectedPetName = "Smith";
+        String expectedName = "Duke";
+
         Dog dog = new Dog(expectedName);
 
         String actualName = dog.getName();
 
-        Assert.assertEquals(expectedName, actualName);
+        assertEquals(expectedName, actualName);
     }
 
     @Test
     public void testDogSetName(){
 
-        Dog dog = new Dog("Ollie");
-        String newName = "Ollie";
+        Dog dog = new Dog("Duke");
+        String newName = "Duke";
 
         dog.setName(newName);
 
-        Assert.assertEquals(newName, dog.getName());
+        assertEquals(newName, dog.getName());
     }
 
     @Test
     public void testDogSpeak(){
 
-        Dog dog   = new Dog("Bruce McBarker");
+        Dog dog   = new Dog("Duke");
 
         String talkingPets = dog.speak();
 
-        Assert.assertEquals("Feed Me Human!", talkingPets);
+        assertEquals("Woof Woof", talkingPets);
     }
 
 }
